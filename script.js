@@ -47,7 +47,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-// optional glow keyframes
-const styleSheet = document.createElement("style");
-styleSheet.textContent = `@keyframes glowPulse { 0% { text-shadow: 0 0 0 #0f6; opacity:0.5;} 100% { text-shadow: 0 0 8px #0f6; opacity:1;} } .access-granted { animation: glowPulse 0.5s; }`;
-document.head.appendChild(styleSheet);
