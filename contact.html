@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Contact | Vault</title><link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    <nav class="neon-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shield-haltered"></i> CYBER::VAULT 
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">TERMINAL</a></li>
+                <li><a href="threats.html">THREATS</a></li>
+                <li><a href="tools.html">TOOLS</a></li>
+                <li><a href="manifesto.html">MANIFESTO</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+<main class="container">
+    <h2 class="page-title">
+        <i class="fas fa-terminal"></i> Console Contact 
+        <span style="font-size:0.8rem;">[ secure@vault ]</span>
+    </h2>
+    <div class="terminal-form-card">
+        <div class="term-prompt-bar">
+            <span class="user-prompt">visitor@cybervault:~$</span> ./send_message --secure
+        </div>
+            <form id="consoleForm">
+                <div class="input-line">
+                    <span class="prompt-sign">></span>
+                    <input type="text" id="name" placeholder="your_handle" required>
+                    <label>NAME</label>
+                </div>
+                <div class="input-line">
+                    <span class="prompt-sign">></span> 
+                    <input type="email" id="email" placeholder="you@proton.me" required>
+                    <label>EMAIL</label>
+                </div>
+                <div class="input-line textarea-line">
+                    <span class="prompt-sign">></span> 
+                    <textarea id="msg" rows="3" placeholder="encrypted_message_here" required></textarea>
+                    <label>MESSAGE</label>
+                </div>
+                <button type="submit" class="cmd-button">
+                    <i class="fas fa-paper-plane"></i> submit_secure()
+                </button>
+                <div id="form-feedback" class="feedback"></div>
+            </form>
+        </div>
+</main>
+<footer>
+    <span>© 2025 Cyber-Security Vault | No logs, no backend — local demo</span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
