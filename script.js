@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     typeWriter();
   }
 
-  // Contact form handling (simple client-side)
+  // Contact form handling 
   const contactForm = document.getElementById('consoleForm');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -46,4 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => feedbackDiv.innerHTML = "", 3000);
     });
   }
+});
+
+/* neon-nav = navbar ; navbar-container = nav-container ; nav-links = navbar-menu ; navbar-toggle = menu-icon */
+
+const menuIcon = document.querySelector('.menu-icon');
+
+const navLinks = document.querySelector('.nav-links');
+
+menuIcon.addEventListener('click',() =>{
+  navLinks.classList.toggle('active');
+  menuIcon.classList.toggle('active');
 });
