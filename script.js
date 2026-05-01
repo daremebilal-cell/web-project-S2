@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (i < fullText.length) {
         typedEl.textContent += fullText.charAt(i);
         i++;
-        setTimeout(typeWriter, 70);
+        setTimeout(typeWriter, 80);
       } else {
         // After typing, show Access Granted message
         const accessDiv = document.getElementById('access-message');
@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-/* neon-nav = navbar ; navbar-container = nav-container ; nav-links = navbar-menu ; navbar-toggle = menu-icon */
 
 const menuIcon = document.querySelector('.menu-icon');
 
